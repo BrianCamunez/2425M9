@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      body{
+      padding: 0;
+      margin: 0;
+      }
+
+      .general {
+        font-size: 20px;
+        display: flex;
+        margin: 0;
+      }
+
+      .izquierda {
+        width: 300px;
+      }
+
+      .buscador {
+        width: 100%;
+        background-color: #eff1f2;
+        overflow: hidden;
+
+      }
+
+      .barraBuscador {
+        display: flex;
+        align-items: center;
+        margin: 20px 40px 20px 40px;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border:1px solid #d6d6d7 ;
+        border-radius: 5px;
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+      }
+      ul li{
+        margin: 0.5em;
+        padding-top: 0.5em;
+      }
+      ul li a{
+        text-decoration: none;
+        color: #3D4449;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="general">
+      <div class="izquierda">
+        <div class="buscador">
+          <div class="barraBuscador">
+            <p>Search</p>
+            <i
+              class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+              style="color: #d6d6d7"
+            ></i>
+          </div>
+        </div>
+        <div class="menu">
+          <nav>
+            <div>Menu</div>
+            <ul>
+              <li><a href="">HOMEPAGE</a></li>
+              <li><a href="">GENERIC</a></li>
+              <li><a href="">ELEMENTS</a></li>
+              <li><a href="">SUBMENU</a>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li><a href="">ETIAM DOLORE</a></li>
+              <li><a href="">ADIPISCING</a></li>
+              <li><a href="">ANOTHER SUBMENU</a></li>
+              <li><a href="">MAXIMUS MAURIS</a></li>
+              <li><a href="">AMET LACINIA</a></li>
+            </ul>
+          </nav>
+      </div>
+      <div class="derecha">
+        <div class="contenido"></div>
+      </div>
+    </div>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
