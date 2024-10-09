@@ -18,10 +18,19 @@
         font-size: 20px;
         display: flex;
         margin: 0;
+        width: 1800px;
+      
       }
 
       .izquierda {
-        width: 300px;
+        width: 350px;
+      }
+
+      .derecha {
+        width: 1350px;
+        border: 1px solid black;
+        align-items: center;
+        margin: 30px 30px 30px 30px;
       }
 
       .buscador {
@@ -53,10 +62,77 @@
         color: #3D4449;
         font-size: 10px;
       }
+      .headerContenido{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        border-bottom: solid 5px red;
+        border-radius: 3px;
+      }
+
+      .headerContenido a{
+        text-decoration: none;
+        color: grey;
+      }
+      .headerContenido a strong{
+        color: black;
+      }
+
+      .iconosHeader a{
+        margin-right: 10px;
+      }
+
+      .contenido{
+        display: flex;
+        margin-top: 80px;
+      }
+      .textoFoto h1{
+        color: #3D4449;
+        font-size: 51px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .textoFoto h4{
+        color: #9e9e9e;
+        font-size: 15px;
+      }
+      .textoFoto p{
+        color: #9e9e9e;
+        font-size: 15px;
+      }
+      .textoFoto button{
+        color: #f56a6a ;
+        border-radius: 0.375em;
+        border: 0;
+        box-shadow: inset 0 0 0 2px #f56a6a;
+        height: 3.5em;
+        padding: 0 2.25em;
+        background-color: transparent;
+      }
+      .section1{
+        margin-top: 90px;
+        border-top: 2px solid grey;
+      }
+      .tituloSection{
+        margin-top: 90px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid;
+        border-color: #f56a6a ;
+        width: 170px;
+      }
+      .separacionSection{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .contenidoSection{
+        width: 50%;
+        display: flex;
+      }
     </style>
   </head>
   <body>
-    <div class="header"></div>
+    <div class="header">
+
+    </div>
     <div class="general">
       <div class="izquierda">
         <div class="buscador">
@@ -90,9 +166,71 @@
               <li><a href="">AMET LACINIA</a></li>
             </ul>
           </nav>
+        </div>
       </div>
       <div class="derecha">
-        <div class="contenido"></div>
+        <div class="headerContenido">
+          <a href="#"><strong>Editorial</strong> by HTML5 UP</a>
+          <div class="iconosHeader">
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #9e9e9e;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f" style="color: #9e9e9e;"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat" style="color: #9e9e9e;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #9e9e9e;"></i></a>
+            <a href="#"><i class="fa-brands fa-medium" style="color: #9e9e9e;"></i></a>
+          </div>
+        </div>
+        <div class="contenido">
+          <div class="textoFoto">
+            <h1>Hi, I’m Editorial by HTML5 UP</h1>
+            <h4>A free and fully responsive site template</h4>
+            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+            <button>LEARN MORE</button>
+          </div>
+          <div class="fotoMain">
+            <img src="./imagenes/pic10.jpg" alt="Foto" style="border-radius: 4px;">
+          </div>
+        </div>
+        <section class="section1">
+          <h2 class="tituloSection">Erat lacinia</h2>
+          <div class="separacionSection">
+            <div class="contenidoSection">
+              <div class="izquierdaSection">
+                <img src="./imagenes/diamanteImagen.png" alt="">
+              </div>
+              <div class="drechaSection">
+                <h5>Portitor ullamcorper</h5>
+                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              </div>
+            </div>
+            <div class="contenidoSection">
+              <div class="izquierdaSection">
+                <img src="./imagenes/diamanteImagen.png" alt="">
+              </div>
+              <div class="drechaSection">
+                <h5>Sapien veroeros</h5>
+                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              </div>
+            </div>
+            <div class="contenidoSection">
+              <div class="izquierdaSection">
+                <img src="./imagenes/diamanteImagen.png" alt="">
+              </div>
+              <div class="drechaSection">
+                <h5>Quam lorem ipsum</h5>
+                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              </div>
+            </div>
+            <div class="contenidoSection">
+              <div class="izquierdaSection">
+                <img src="./imagenes/diamanteImagen.png" alt="">
+              </div>
+              <div class="drechaSection">
+                <h5>Sed magna finibus</h5>
+                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <main></main>
