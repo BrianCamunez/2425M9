@@ -1,0 +1,143 @@
+body{
+    padding: 0;
+    margin: 0;
+    }
+
+    .general {
+      font-size: 20px;
+      display: flex;
+      margin: 0;
+      width: 1800px;
+    
+    }
+
+    .izquierda {
+      width: 350px;
+    }
+
+    .derecha {
+      width: 1350px;
+      border: 1px solid black;
+      align-items: center;
+      margin: 30px 30px 30px 30px;
+    }
+
+    .buscador {
+      width: 100%;
+      background-color: #eff1f2;
+      overflow: hidden;
+
+    }
+
+    .barraBuscador {
+      display: flex;
+      align-items: center;
+      margin: 20px 40px 20px 40px;
+      justify-content: space-between;
+      background-color: #ffffff;
+      border:1px solid #d6d6d7 ;
+      border-radius: 5px;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+    ul li{
+      margin: 0.5em;
+      padding-top: 0.5em;
+    }
+    ul li a{
+      text-decoration: none;
+      color: #3D4449;
+      font-size: 10px;
+    }
+    .headerContenido{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+      border-bottom: solid 5px red;
+      border-radius: 3px;
+    }
+
+    .headerContenido a{
+      text-decoration: none;
+      color: grey;
+    }
+    .headerContenido a strong{
+      color: black;
+    }
+
+    .iconosHeader a{
+      margin-right: 10px;
+    }
+
+    .contenido{
+      display: flex;
+      margin-top: 80px;
+    }
+    .textoFoto h1{
+      color: #3D4449;
+      font-size: 51px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .textoFoto h4{
+      color: #9e9e9e;
+      font-size: 15px;
+    }
+    .textoFoto p{
+      color: #9e9e9e;
+      font-size: 15px;
+    }
+    .textoFoto button{
+      color: #f56a6a ;
+      border-radius: 0.375em;
+      border: 0;
+      box-shadow: inset 0 0 0 2px #f56a6a;
+      height: 3.5em;
+      padding: 0 2.25em;
+      background-color: transparent;
+    }
+    .section1{
+      margin-top: 90px;
+      border-top: 2px solid grey;
+    }
+    .tituloSection{
+      margin-top: 90px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid;
+      border-color: #f56a6a ;
+      width: 170px;
+    }
+    .separacionSection{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .contenidoSection{
+      width: 50%;
+      display: flex;
+    }
+
+    .izquierdaSection{
+        width: 200px;
+        height: 200px;
+    }
+
+    .izquierdaSection span i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 40px;
+        
+    }
+
+    .izquierdaSection span{
+        display: inline-block; /* Asegúrate de que el span se comporte como un bloque */
+        transform: rotate(45deg); 
+        border-radius: 0.25em;
+        border: solid 2px rgba(210, 215, 217, 0.75);
+        width: 110px; /* Ajusta según sea necesario */
+        height: 110px; /* Ajusta según sea necesario */
+        margin: 10px; /* Espaciado si es necesario */
+        position: relative; /* Para posicionar el ícono */
+    }
