@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 - Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .img-container {
+            position: relative;
+            width: 100%;
+            height: 220px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png"
+              alt=""
+              width="40px"
+              height="30px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="seccion-heroe text-center">
+        <div class="container">
+          <h1 class="display-4">Bienvenido a mi Pagina Web</h1>
+          <p class="lead">
+            Especialitzat en crear llocs web moderns, atractius i funcionals amb
+            les millors tecnologies.
+          </p>
+          <a class="btn btn-info btn-lg mt-3" href="#">Ver Proyectos</a>
+        </div>
+      </div>
+
+      <!-- ------------------------------------------- -->
+
+      <div class="container bg-light p-5 rounded-3">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              class="img-fluid rounded-circle"
+              src="https://img.freepik.com/fotos-premium/descarga-imagen-fondo-hd_555090-60427.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-8">
+            <h2 class="h3">Me llamo Brian</h2>
+            <p>Soy un estudiante de FPLlefia, un centro que esta muy bien.</p>
+            <p>
+              Ahora estoy empezando a dominar Bootstrap con el profesor Carlos
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------------------------------- -->
+      <div class="container my-5 bg-light p-5 rounded-3 shadow-sm"">
+        <h2 class="text-center">Proyectos</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                class="card-img-top"
+                src="https://via.placeholder.com/300"
+                alt=""
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card 1</h5>
+              <p class="card-text">Texto de la card 1</p>
+              <a class="btn btn-warning mt-auto"" href="#"
+                >Ver mas detalles</a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                class="card-img-top"
+                src="https://via.placeholder.com/300"
+                alt=""
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card 2</h5>
+              <p class="card-text">Texto de la card 2</p>
+              <a class="btn btn-warning mt-auto" href="#"
+                >Ver mas detalles</a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                class="card-img-top"
+                src="https://via.placeholder.com/300"
+                alt=""
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Texto de la card 3</p>
+              <a class="btn btn-warning mt-auto" href="#"
+                >Ver mas detalles</a
+              >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ---------------------------------------------------------------- -->
+
+    <div class="container my-5 bg-light p-5 rounded-3 shadow-sm">
+        <h2 class="text-center mb-4">Galería de Imágenes</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="img-container shadow-sm">
+                    <a href="/ejercicio2/imagenes/amazonas.png" target="_blank">
+                        <img class="img-fluid rounded-3" src="/ejercicio2/imagenes/amazonas.png" alt="Imagen Amazonas">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-container shadow-sm">
+                    <a href="/ejercicio2/imagenes/campoFutbol.png" target="_blank">
+                        <img class="img-fluid rounded-3" src="/ejercicio2/imagenes/campoFutbol.png" alt="Imagen Campo de Futbol">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-container shadow-sm">
+                    <a href="/ejercicio2/imagenes/canchaBaloncesto.png" target="_blank">
+                        <img class="img-fluid rounded-3" src="/ejercicio2/imagenes/canchaBaloncesto.png" alt="Cancha de Baloncesto">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-container shadow-sm">
+                    <a href="/ejercicio2/imagenes/penedes.png" target="_blank">
+                        <img class="img-fluid rounded-3" src="/ejercicio2/imagenes/penedes.png" alt="Imagen del Penedes">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-container shadow-sm">
+                    <a href="/ejercicio2/imagenes/playa.png" target="_blank">
+                        <img class="img-fluid rounded-3" src="/ejercicio2/imagenes/playa.png" alt="Imagen de una Playa">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-container shadow-sm">
+                    <a href="/ejercicio2/imagenes/teide.png" target="_blank">
+                        <img class="img-fluid rounded-3" src="/ejercicio2/imagenes/teide.png" alt="Imagen del Teide">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+     <div class="container my-5 bg-light p-5 rounded-3 shadow-sm">
+        <h2 class="text-center mb-3">Formulario</h2>
+        <form>
+            <div class="mb-3">
+                <label for="InputNombre" class="form-label">Nombre</label>
+                <input type="text" name="Nombre" id="InputNombre" class="form-control shadow-sm">
+            </div>
+            <div class="mb-3">
+                <label for="InputCorreo" class="form-label">Correo Electronico</label>
+                <input type="email" name="Email" id="InputCorreo" class="form-control shadow-sm">
+            </div>
+            <div class="mb-3">
+                <label for="InputTexto" class="form-label">Comentario</label>
+                <textarea name="Texto" id="InputTexto" rows="5" class="form-control shadow-sm"></textarea>
+            </div>
+            <button class="btn btn-warning w-100">Comentar</button>
+        </form>
+     </div>
+    </main>
+    <footer class="text-white text-center text-lg-start bg-dark mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h2>Sobre Mi</h2>
+                    <p>Soy un estudiante de FPLlefia que esta aprendiendo como usar Bootstrap</p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h2>Enlaces</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-info text-decoration-none">Inicio</a></li>
+                        <li><a href="#" class="text-info text-decoration-none">Sobre Mi</a></li>
+                        <li><a href="#" class="text-info text-decoration-none">Proyectos</a></li>
+                        <li><a href="#" class="text-info text-decoration-none">Galeria</a></li>
+                        <li><a href="#" class="text-info text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <h2 class="text-center">Sigueme</h2>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li><a href="#" class="me-4 text-white"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="me-4 text-white"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="#" class="me-4 text-white"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ---------------------------------------------------------------- -->
+    <a href="carlos.html">Pagina carlos</a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- (Inici, Sobre Mi, Projectes, Galeria, Contacte -->
